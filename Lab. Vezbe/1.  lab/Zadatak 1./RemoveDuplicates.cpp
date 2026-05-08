@@ -3,20 +3,20 @@ void LList::removeDuplicates()
 	if (isEmpty())
 		return;
 
-	SLLNode* traznieEL = head;
+	LListNode* trazeniEL = head;
 
 	while (trazeniEL != nullptr)
 	{
-		SLLNode* prethodni = trazeniEL;
-		SLLNode* trenutni = trazeniEL->next;
+		LListNode* prethodni = trazeniEL;
+		LListNode* trenutni = trazeniEL->next;
 
 		while (trenutni != nullptr)
 		{
 			// Ako je trenutni čvor duplikat, ukloni ga iz liste
 
-			if (trenutni->info == trazeniEl->info)
+			if (trenutni->info == trazeniEL->info)
 			{
-				prethnodni->next = trenutni->next;
+				prethodni->next = trenutni->next;
 				delete trenutni;
 				trenutni = prethodni->next; // pomeramo trenutni na sledeći čvor nakon brisanja
 			}
@@ -26,7 +26,7 @@ void LList::removeDuplicates()
 				trenutni = trenutni->next;
 			}
 		}
-		trazeniEl = trazeniEl->next; // pomeramo trazeniEL na sledeći čvor
+		trazeniEL = trazeniEL->next; // pomeramo trazeniEL na sledeći čvor
 	}
 
 }
