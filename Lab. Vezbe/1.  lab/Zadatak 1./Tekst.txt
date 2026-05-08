@@ -1,0 +1,9 @@
+- U projektu jednostruko spregnute dinamičke lančane liste implementirati metodu void removeDuplicates() 
+koja iz lančane liste briše sva višestruka pojavljivanja elemenata pri čemu čvor sa prvim pojavljivanjem elementa ostaje u listi. 
+U glavnoj funkciji programa prikazati sadržaj liste pre i posle poziva implementirane funkcije. 
+
+English version: 
+
+- In this project of a dynamical singly list implement a method void removeDuplicates() 
+which removes all double occurences of every element in the list. After the call of this method, there should be only distinct values elements.
+In the main function print the list content before and after the implemented method call.
